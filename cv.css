@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+
+.container .left-side {
+    background: #060035;
+    padding: 40px;
+}
+
+
+.name h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.name h2 {
+    color: #fff;
+    font-size: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+}
+
+
+.contact-info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul li {
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info ul li a{
+    text-decoration: none;
+}
+.contact-info ul li .icon {
+    display: inline;
+    width: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contact-info .text {
+    color: #fff;
+    display: inline;
+    font-weight: 800;
+    
+}
+
+.contact-info li:hover .icon {
+    color: lightblue;
+}
+
+.contact-info ul li span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-info.education li {
+    margin-bottom: 15px;
+}
+
+.contact-info.education h5 {
+    color: blue;
+}
+
+.contact-info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 800;
+}
+
+.contact-info.education h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.container .right-side {
+    background: #fff;
+    padding: 40px;
+}
+
+
+.about {
+    margin-bottom: 50px;
+}
+
+.title2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.box .year-company {
+    min-width: 200px;
+}
+
+.box .year-company h5 {
+    font-size: 13px;
+    color: blue;
+    font-weight: 700;
+}
+
+.box .text h4 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: blue;
+    font-weight: 700;
+}
+
+.skills .box .percent {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: gray;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #060035;
+}
+
+
+.my-project {
+    display: inline;
+}
+
+.my-project ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-project ul li {
+    margin-bottom: 10px;
+}
+
+.my-project ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .my-project ul {
+        display: inline;
+        flex-direction: column; 
+        
+    }
+
+    .my-project ul li {
+        margin-bottom: 10px;
+        text-align: center; 
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .box .year-company {
+        margin-bottom: 10px; 
+    }
+}
